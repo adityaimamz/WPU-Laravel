@@ -5,7 +5,8 @@
 
     @foreach ($categories as $category)
     <ul>
-        <li><a href="/categories/{{ $category->slug }}">{{ $category->name }}</a></li>
+        <li><a class="text-decoration-none" href="/categories/{{ $category->slug }}">{{ $category->name }}</a></li>
+        <a class="text-decoration-none" href="/post/{{ $post->slug }}">Read more</a>
     </ul>
     @endforeach
 
